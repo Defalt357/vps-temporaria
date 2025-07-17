@@ -35,6 +35,7 @@ jobs:
     grep "url=tcp://" ngrok.log
   env:
     NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+      
       - name: Instalar e executar Speedtest
         run: |
           sudo apt-get install -y speedtest-cli
